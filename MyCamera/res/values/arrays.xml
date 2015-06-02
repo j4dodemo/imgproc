@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="options">
+        <item>贴图1</item>
+        <item>贴图2</item>
+
+    </string-array>
+
+</resources>

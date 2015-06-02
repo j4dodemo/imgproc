@@ -1,0 +1,31 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:selectIcon="http://schemas.android.com/apk/res/com.do_demo.mycamera"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp" >
+
+    <FrameLayout
+        android:id="@+id/image_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true" >
+
+        <ImageView
+            android:id="@+id/optionIcon_imageView"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:visibility="visible" />
+
+        <com.do_demo.mycamera.widget.SelectIcon
+            android:id="@+id/select_img"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_gravity="right"
+            android:visibility="invisible"
+            selectIcon:circle_color="@color/circle_color"
+            selectIcon:tick_color="@color/tick_color"
+            selectIcon:tick_width="4dp" />
+    </FrameLayout>
+</RelativeLayout>

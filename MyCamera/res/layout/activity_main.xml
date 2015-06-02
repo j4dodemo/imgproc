@@ -1,0 +1,65 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PictureSelectActivity" >
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/relativeLayout1" >
+
+        <FrameLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" >
+
+            <RelativeLayout
+                android:id="@+id/img_lot"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <com.do_demo.mycamera.TouchView
+                    android:id="@+id/img_src"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:scaleType="center"
+                    android:src="@drawable/ic_launcher" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+            </RelativeLayout>
+        </FrameLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true" >
+
+        <com.do_demo.mycamera.widget.HorizontalListView
+            android:id="@+id/options_horizontalListView"
+            android:layout_width="match_parent"
+            android:layout_height="80dp" >
+        </com.do_demo.mycamera.widget.HorizontalListView>
+
+        <Button
+            android:id="@+id/btn_stickers"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="57dp"
+            android:text="贴图" />
+
+        <Button
+            android:id="@+id/btn_bg"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="背景" />
+    </RelativeLayout>
+
+</RelativeLayout>

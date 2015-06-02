@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="SelectIcon">
+        <attr name="circle_color" format="reference" />
+        <attr name="tick_color" format="reference" />
+        <attr name="tick_width" format="dimension" />
+    </declare-styleable>
+    
+</resources>
